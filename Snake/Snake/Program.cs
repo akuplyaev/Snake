@@ -16,8 +16,15 @@ namespace Snake {
             downLine.Drow();
             leftLine.Drow();
             rightLine.Drow();
+<<<<<<< 01ea44ba28582ce02a6c06cc18cd7604a936f1ac
             Console.ReadKey();
            
+=======
+            Point p = new Point(3,4,'*');
+            Snake snake = new Snake(p, 4, Direction.RIGHT);
+            snake.Drow();
+            Console.ReadKey();
+>>>>>>> 264cccedcb009168e7401229ab3fe9451d115159
         }
     }
 }
