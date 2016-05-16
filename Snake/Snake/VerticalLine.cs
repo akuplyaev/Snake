@@ -9,7 +9,7 @@ namespace Snake {
 
         public VerticalLine(int yUp,int yDown,int x,char ch) {
             pList = new List<Point>();
-            for (int y = yUp; x <= yDown; y++) {
+            for (int y = yUp; y <= yDown; y++) {
                 Point p = new Point(x, y, ch);
                 pList.Add(p);
             }

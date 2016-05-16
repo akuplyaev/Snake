@@ -16,6 +16,7 @@ namespace Snake {
             downLine.Drow();
             leftLine.Drow();
             rightLine.Drow();
+            Console.ReadKey();
            
         }
     }
