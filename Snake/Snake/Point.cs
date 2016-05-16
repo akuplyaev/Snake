@@ -39,6 +39,11 @@ namespace Snake {
             Console.SetCursorPosition(x, y);
             Console.Write(ch);
         }
+
+        public void Clear() {
+            ch = ' ';
+            Draw();
+        }
     }
 
 }
