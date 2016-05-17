@@ -10,10 +10,10 @@ namespace Snake {
         public int y;
         public char ch;
         public Point() { }
-        public Point(int _x, int _y, char _ch) {
-            x = _x;
-            y = _y;
-            ch = _ch;
+        public Point(int x, int y, char ch) {
+            this.x = x;
+            this.y = y;
+            this.ch = ch;
         }
         public Point(Point p) {
             x = p.x;
@@ -30,14 +30,17 @@ namespace Snake {
             else if (dir == Direction.UP) {
                 y = y - offset;
             }
-            else  if (dir==Direction.DOWN){
-                y=y+offset;
+            else if (dir == Direction.DOWN) {
+                y = y + offset;
             }
         }
 
         public void Draw() {
             Console.SetCursorPosition(x, y);
             Console.Write(ch);
+        }
+        public bool IsHit(Point p) {
+            return p.x == this.x && p.y == this.y;
         }
 
         public void Clear() {
